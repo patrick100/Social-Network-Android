@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TITLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBIR FOTO"
+        android:textSize="30dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23dp" />
+
+    <ImageView
+        android:id="@+id/upload_image"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        app:srcCompat="@drawable/gallery" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:text="Añade una descripción">
+
+        <requestFocus />
+    </EditText>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
+
+    <ImageButton
+        android:id="@+id/firebase_upload"
+        android:layout_width="77dp"
+        android:layout_height="60dp"
+        android:background="@drawable/corner"
+
+        app:srcCompat="@drawable/firebase_upload" />
+
+
+</LinearLayout>

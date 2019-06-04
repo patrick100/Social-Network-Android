@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:background="@color/cardview_dark_background"
+        android:id="@+id/img_comment"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/add_user" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enter_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Insertar Comentario" />
+
+        <ImageButton
+            android:id="@+id/upload_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/add_plus" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.crm.elmolino.tracker_crm"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+
+
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    //implementation 'com.firebaseui:firebase-ui-database:4.1.0'
+
+    //implementation 'com.firebaseui:firebase-ui:4.1.0'
+
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.facebook.android:facebook-android-sdk:4.28.0'
+
+    implementation 'com.google.firebase:firebase-storage:11.8.0'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+
+    implementation 'com.google.firebase:firebase-firestore:11.8.0'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.maps.android:android-maps-utils:0.4+'
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.12.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    /*
+    // Core librar
+    androidTestImplementation 'androidx.test:core:1.0.0'
+
+    // AndroidJUnitRunner and JUnit Rule
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+
+    // Assertions
+    androidTestImplementation 'androidx.test.ext:junit:1.0.0'
+    androidTestImplementation 'androidx.test.ext:truth:1.0.0'
+    androidTestImplementation 'com.google.truth:truth:0.42'
+
+    // Espresso dependencies
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-accessibility:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-web:3.1.0'
+    androidTestImplementation 'androidx.test.espresso.idling:idling-concurrent:3.1.0'
+
+    // The following Espresso dependency can be either "implementation"
+    // or "androidTestImplementation", depending on whether you want the
+    // dependency to appear on your APK's compile classpath or the test APK
+    // classpath.
+    androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.1.0'
+    */
+
+}
+
+apply plugin: 'com.google.gms.google-services'
